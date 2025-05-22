@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>MOKEPON</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/js.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>MOKEPON 🔥💧🌎</h1>
+
+    <!-- Selección de mascota -->
+    <section id="seleccionar-mascota">
+        <h2>Selecciona tu Mokepon</h2>
+
+        <div class="mascota-opciones">
+            <label for="hipodoge" class="mascota-card">
+                <input type="radio" name="mascota" id="hipodoge" />
+                <img src="imagenes/HIPODOGE.png" alt="Hipodoge" class="img-mascota" />
+                <p>Hipodoge</p>
+            </label>
+
+            <label for="capipepo" class="mascota-card">
+                <input type="radio" name="mascota" id="capipepo" />
+                <img src="imagenes/CAPIPEPO.png" alt="Capipepo" class="img-mascota" />
+                <p>Capipepo</p>
+            </label>
+
+            <label for="ratigueya" class="mascota-card">
+                <input type="radio" name="mascota" id="ratigueya" />
+                <img src="imagenes/RATIGUEYA.png" alt="Ratigueya" class="img-mascota" />
+                <p>Ratigueya</p>
+            </label>
+        </div>
+
+        <button id="boton-seleccionar">Seleccionar</button>
+    </section>
+
+    <!-- Combate -->
+    <section id="seleccionar-ataque" style="display:none;">
+        <h2>Elige tu ataque</h2>
+        <p>Tu mascota: <span id="mascota-jugador">---</span> - Vidas: <span id="vidas-jugador">3</span></p>
+        <p>Mascota del enemigo: <span id="mascota-enemigo">---</span> - Vidas: <span id="vidas-enemigo">3</span></p>
+
+        <div style="text-align:center;">
+            <button id="ataque-fuego">Fuego 🔥</button>
+            <button id="ataque-agua">Agua 💧</button>
+            <button id="ataque-tierra">Tierra 🌎</button>
+        </div>
+    </section>
+
+    <!-- Mensajes -->
+    <section id="mensajes">
+        <p id="resultado-combate">El combate comenzará...</p>
+    </section>
+
+    <!-- Reiniciar -->
+    <section id="reiniciar" style="display:none;">
+        <button id="button-reiniciar">Reiniciar</button>
+    </section>
+
+    <footer>
+        Tecnológico Nacional de México campus Pachuca - Programación Web - Claudia Melissa Manzano Luna - 23200168
+    </footer>
+</body>
+</html>
